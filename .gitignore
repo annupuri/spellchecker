@@ -1,0 +1,19 @@
+# Build output
+target/
+bin/
+*.class
+
+# Packaged artifacts
+*.jar
+*.war
+*.ear
+*.exe
+
+# IDE
+# Eclipse / m2e and the VS Code Java language server regenerate these from pom.xml.
+.classpath
+.project
+.settings/
+.vscode/
+.idea/
+*.iml
