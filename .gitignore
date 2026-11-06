@@ -17,3 +17,7 @@ bin/
 .vscode/
 .idea/
 *.iml
+
+# Local scratch space for ad-hoc notes/files while working in this repo;
+# not part of the project, never committed.
+/tmp/
