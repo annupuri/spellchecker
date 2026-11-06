@@ -92,6 +92,11 @@ mvn clean package
 
 See [docs/test-spec.md](docs/test-spec.md) for the behaviour checklist.
 
+## Contributing
+
+Issues and pull requests are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for
+the scope, workflow and commit rules.
+
 ## License
 
 Apache License 2.0 — see [LICENSE](LICENSE) and [NOTICE](NOTICE).
