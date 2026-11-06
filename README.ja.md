@@ -91,6 +91,11 @@ mvn clean package
 
 挙動チェックリストは [docs/test-spec.md](docs/test-spec.md) を参照してください。
 
+## 開発への参加
+
+issue や pull request を歓迎します。受け入れる変更の範囲・流れ・コミットのルールは
+[CONTRIBUTING.md](CONTRIBUTING.md)（英語）を参照してください。
+
 ## ライセンス
 
 Apache License 2.0 — [LICENSE](LICENSE) および [NOTICE](NOTICE) を参照。
