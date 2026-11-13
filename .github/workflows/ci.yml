@@ -18,9 +18,9 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        # 21 is the minimum the jar supports (maven.compiler.release);
-        # 25 is the JDK used for development (.tool-versions).
-        java: ["21", "25"]
+        # 25 is both the minimum the jar supports (maven.compiler.release)
+        # and the JDK used for development (.tool-versions).
+        java: ["25"]
     steps:
       - uses: actions/checkout@v7
 

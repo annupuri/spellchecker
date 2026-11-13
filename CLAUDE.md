@@ -9,11 +9,11 @@ A design goal is that a keyword file larger than memory never causes an
 
 | Command | What it does |
 |---|---|
-| `mvn -B verify` | Compile, run the JUnit tests and build the shaded jar. CI runs this on JDK 21 and 25 |
+| `mvn -B verify` | Compile, run the JUnit tests and build the shaded jar. CI runs this on JDK 25 |
 | `mvn test` | Run the tests only |
 | `mvn clean package` | Build `target/spellchecker-<version>.jar` |
 
-Development uses JDK 25 (`.tool-versions`); the jar targets Java 21
+Development uses JDK 25 (`.tool-versions`) and the jar targets Java 25
 (`maven.compiler.release` in `pom.xml`). Run `mvn -B verify` before every
 commit.
 
@@ -33,7 +33,7 @@ commit.
 - **The README is bilingual.** `README.md` and `README.ja.md` change
   together. `docs/test-spec.md` is Japanese only.
 - **Minimum Java release bumps** touch, together: `maven.compiler.release` in
-  `pom.xml`, the "JDK 21+" line in `README*.md` and the CI matrix in
+  `pom.xml`, the "JDK 25+" line in `README*.md` and the CI matrix in
   `.github/workflows/ci.yml`. The development JDK lives in `.tool-versions`;
   keep it within the CI matrix.
 - **`CONTRIBUTING.md`** repeats the principles, test rules and commit rules

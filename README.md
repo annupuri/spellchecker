@@ -58,7 +58,7 @@ file with `spellchecker.dictionary` or `./words`.
 
 ## Build
 
-Requires JDK 21+ and Maven.
+Requires JDK 25+ and Maven.
 
 ```
 mvn clean package
