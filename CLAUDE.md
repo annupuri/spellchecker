@@ -36,6 +36,11 @@ commit.
   `pom.xml`, the "JDK 25+" line in `README*.md` and the CI matrix in
   `.github/workflows/ci.yml`. The development JDK lives in `.tool-versions`;
   keep it within the CI matrix.
+- **Version bumps** touch, together: `<version>` in `pom.xml` and every
+  `spellchecker-<version>.jar` in `README*.md`. Tag `v<version>` only when
+  something users see changes (a fix, a feature, a new minimum Java), not
+  for CI or documentation-only work. Raising the minimum Java release is a
+  minor bump. The maintainer creates and pushes tags.
 - **`CONTRIBUTING.md`** repeats the principles, test rules and commit rules
   in this file for outside contributors; when one of them changes here,
   change it there too. The license is Apache 2.0 (`LICENSE`, `NOTICE`).
