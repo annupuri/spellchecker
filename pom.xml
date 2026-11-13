@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>io.github.annupuri</groupId>
 	<artifactId>spellchecker</artifactId>
-	<version>1.0.0</version>
+	<version>1.1.0</version>
 	<name>Spell Checker</name>
 	<description>Substring dictionary lookup tool, bucketed by word length.</description>
 	<url>https://github.com/annupuri/spellchecker</url>
