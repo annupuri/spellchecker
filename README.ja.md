@@ -21,7 +21,7 @@
 実行例:
 
 ```
-$ java -jar spellchecker-1.0.0.jar mango
+$ java -jar spellchecker-1.1.0.jar mango
 [INFO] io.github.annupuri.spellchecker.SpellChecker search: Line1: mango (match with [mango])
 [INFO] io.github.annupuri.spellchecker.SpellChecker search: Line1: mango (diff by 1 char from [mangos])
 [INFO] io.github.annupuri.spellchecker.SpellChecker search: Line1: mango (diff by 2 char from [mangoes, mangold])
@@ -32,10 +32,10 @@ $ java -jar spellchecker-1.0.0.jar mango
 
 ```
 # 1 つ以上のキーワード
-java -jar spellchecker-1.0.0.jar KEYWORD [KEYWORD ...]
+java -jar spellchecker-1.1.0.jar KEYWORD [KEYWORD ...]
 
 # 既存のファイルを 1 つ指定: 各行をスペースで分割し、全トークンをキーワードとして扱う
-java -jar spellchecker-1.0.0.jar path/to/keywords.txt
+java -jar spellchecker-1.1.0.jar path/to/keywords.txt
 ```
 
 引数なしで実行すると使い方を表示して終了します。
@@ -61,7 +61,7 @@ JDK 25 以上と Maven が必要です。
 
 ```
 mvn clean package
-# -> target/spellchecker-1.0.0.jar
+# -> target/spellchecker-1.1.0.jar
 ```
 
 ## 設計メモ

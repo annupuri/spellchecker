@@ -22,7 +22,7 @@ Given a keyword, it reports three kinds of result:
 Example:
 
 ```
-$ java -jar spellchecker-1.0.0.jar mango
+$ java -jar spellchecker-1.1.0.jar mango
 [INFO] io.github.annupuri.spellchecker.SpellChecker search: Line1: mango (match with [mango])
 [INFO] io.github.annupuri.spellchecker.SpellChecker search: Line1: mango (diff by 1 char from [mangos])
 [INFO] io.github.annupuri.spellchecker.SpellChecker search: Line1: mango (diff by 2 char from [mangoes, mangold])
@@ -33,10 +33,10 @@ $ java -jar spellchecker-1.0.0.jar mango
 
 ```
 # one or more keywords
-java -jar spellchecker-1.0.0.jar KEYWORD [KEYWORD ...]
+java -jar spellchecker-1.1.0.jar KEYWORD [KEYWORD ...]
 
 # a single existing file: each line is split on spaces and every token is a keyword
-java -jar spellchecker-1.0.0.jar path/to/keywords.txt
+java -jar spellchecker-1.1.0.jar path/to/keywords.txt
 ```
 
 With no arguments it prints usage and exits.
@@ -62,7 +62,7 @@ Requires JDK 25+ and Maven.
 
 ```
 mvn clean package
-# -> target/spellchecker-1.0.0.jar
+# -> target/spellchecker-1.1.0.jar
 ```
 
 ## Design notes
