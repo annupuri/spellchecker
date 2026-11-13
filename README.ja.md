@@ -57,7 +57,7 @@ java -jar spellchecker-1.0.0.jar path/to/keywords.txt
 
 ## ビルド
 
-JDK 21 以上と Maven が必要です。
+JDK 25 以上と Maven が必要です。
 
 ```
 mvn clean package

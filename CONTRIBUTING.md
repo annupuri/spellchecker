@@ -13,7 +13,7 @@ a change is accepted:
   Keyword input is streamed line by line and never held in memory in full.
   Changes that read the whole keyword file at once are not accepted.
 - **The jar stays a single self-contained runnable jar** that works on the
-  Java release set in `pom.xml` (`maven.compiler.release`, currently 21).
+  Java release set in `pom.xml` (`maven.compiler.release`, currently 25).
   New runtime dependencies need a good reason; discuss them in an issue first.
 - **The dictionary lookup order stays as documented** in the README:
   `spellchecker.dictionary`, `./words`, `/usr/share/dict/words`, then the
@@ -32,13 +32,13 @@ Please do not report security problems in a public issue. Use the
 1. Fork the repository and create a topic branch from an up-to-date `main`
    (for example `fix/empty-keyword` or `docs/usage-examples`).
 2. Make your change, with tests (see below).
-3. Run the build and tests locally with JDK 21 or later and Maven:
+3. Run the build and tests locally with JDK 25 or later and Maven:
 
    ```sh
    mvn -B verify
    ```
 
-4. Open a pull request against `main`. CI (`mvn verify` on JDK 21 and 25) must
+4. Open a pull request against `main`. CI (`mvn verify` on JDK 25) must
    pass before the pull request can be merged.
 
 `main` is protected: every change, including the maintainer's own, goes in
@@ -68,7 +68,7 @@ description.
   the English file only and say so in the pull request; the maintainer will
   update the twin.
 - **The minimum Java release** appears in `pom.xml`
-  (`maven.compiler.release`), the "JDK 21+" line in both READMEs and the CI
+  (`maven.compiler.release`), the "JDK 25+" line in both READMEs and the CI
   matrix in `.github/workflows/ci.yml`. A change to it updates all of them.
 
 ## Commits
